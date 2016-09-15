@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="start.css"/>
+	</head>
+	<body>
+		<br>
+		<h1>GalBox</h1>
+		<br>
+		<div id="upload_form">
+			<h1>Upload File</h1>
+			<form action="/upload" enctype="multipart/form-data" method="post">
+				<input type="text" placeholder="User Name" name="username" required>
+				<br>
+				<input type="file" name="upload" required>
+				<br><br>
+				<input type="submit" value="Upload" />
+				<p>No file to upload?  <a href="folder">Go to your folder </a></p>
+			</form>
+		</div>
+	</body>
+</html>
