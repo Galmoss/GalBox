@@ -7,6 +7,14 @@ function route(handle, pathname, response, request)
 	{
 		handle[".css"](response, request,pathname);
 	}
+	else if ( pathname.indexOf('.png') != -1)
+	{
+		handle[".png"](response, request,pathname);
+	}
+	else if ( pathname === "/download")
+	{
+		handle["/download"](response, request,true);
+	}
 	else if (typeof handle[pathname] === 'function') 
 	{
 		handle[pathname](response, request);
